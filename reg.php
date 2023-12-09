@@ -24,7 +24,7 @@
 <?php
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);  // INPUT_POST, used in the filter_input_array() function
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
 
     if(empty($username)){
